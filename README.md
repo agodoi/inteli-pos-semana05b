@@ -1,1 +1,241 @@
 # inteli-pos-semana05b
+
+
+
+## Protocolo IPV4 vs IPV6
+
+A figura a seguir aponta as principais diferenças. Contudo, na rede local, só se usa o IPV4.
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/SubRedes/blob/main/imgs/ipv4_vs_ipv6.png">
+   <img alt="IPV4 vs IPV6" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SubRedes/blob/main/imgs/ipv4_vs_ipv6.png)">
+</picture
+
+
+## Redes e Sub-redes
+
+As redes de computadores servem para criar hierarquias de estações de trabalho dentro de numa organização. Por exemplo, numa instituição de ensino, existe a rede de alunos, a de professores e a administrativa. As redes geralmente não se conversam e há critérios de segurança entre elas.
+
+E as sub-redes são redes menores que nascem a partir de uma rede, e para isso, precisamos do CIDR (Classes Inter-Domain Routing) para organizar essas redes dentro de redes.
+
+## Basicamente, o que você precisa saber pra dominar esse trem?
+
+| Fazer conversão de binária para decimal.|
+|-|
+
+## Exemplo 01:
+
+### Dado o IP 10.0.0.0/26
+#### a) Qual é o endereço de rede?
+#### b) Qual é o primeiro IPV4 disponível?
+#### c) Qual é o endereço de broadcast na rede?
+#### d) Qual é o último endereço IPV4 útil disponível?
+
+O /26 significa que o CIDR = 26, então significa 26 bits são fixos, isto é, uma máscara de 26 bits "1" e 6 bits irrelevantes marcados por x.
+
+Então, você pode brincar com os bits flexíveis marcados por **X**, mas não pode mudar os bits marcados por **1**.
+
+|1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 X X X X X X |
+|-|-|-|-|
+| 255 | 255 | 255 | 192 |
+
+Olhando para **10.0.0.0/26** sua missão é:
+
+a) Qual é a máscara de rede?
+
+b) Qual é o endereço de rede?
+
+c) Qual é o primeiro IPV4 disponível?
+
+d) Qual é o endereço de broadcast na rede?
+
+e) Qual é o último endereço IPV4 útil disponível?
+
+f) Quantos hosts cabem nessa rede?
+
+### a) Máscara de rede
+
+Máscara de sub-rede é um valor numérico que é usado em redes de computadores para dividir uma rede IP em sub-redes menores. Essa máscara é usada em conjunto com um endereço IP para determinar quais bits no endereço IP representam a rede e quais bits representam o host dentro dessa rede.
+
+A parte da rede é indicada com **1**. A parte de hosts é indicada com **0** ou **X**. Vamos adotar o **X**, que significa, *irrelevante* (será uma faixa de valores e não um valor único). Para o exemplo dado **/26** teremos:
+
+|1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 X X X X X X |
+|-|-|-|-|
+| 255 | 255 | 255 | 192 |
+
+
+### b) Endereço de rede é o primeiro endereço da faixa (quando os bits X são só ZERO): 
+
+Pega o IP original dado no enunciado:
+
+| 10 | 0 | 0 | 0 |
+|-|-|-|-|
+
+Compare com a máscara e encontre os bits flexíveis **X** e não mexa com os bits marcados em **1**:
+
+|1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 1 1 1 1 1 1 | 1 1 X X X X X X |
+|-|-|-|-|
+| 255 | 255 | 255 | 192 |
+
+Resulta em:
+
+| 0 0 0 0 1 0 1 0 | 0 0 0 0 0 0 0 0 | 0 0 0 0 0 0 0 0 | 0 0 X X X X X X |
+|-|-|-|-|
+| 10 | 0 | 0 | 0 0 X X X X X X |
+
+Finalmente, coloque **0** no lugar dos **X** para encontrar o endereço da rede, porque endereço de rede é sempre o primeiro endereço possível:
+
+| 10 | 0 | 0 | 0 0 0 0 0 0 0 0 |
+|-|-|-|-|
+
+Que é o mesmo que **10.0.0.0**
+
+### c) Qual é primeiro IP útil disponível?
+
+É sempre o primeiro após o endereço da rede. Portanto:
+
+| 10 | 0 | 0 | 0 0 0 0 0 0 0 1 |
+|-|-|-|-|
+| 10 | 0 | 0 | 1 |
+
+
+### d) Qual o endereço de broadcast da rede? 
+
+Quando os **X** flexíveis são semopre **1**: 
+
+| 10 | 0 | 0 | 0 0 1 1 1 1 1 1 |
+|-|-|-|-|
+
+Resulta em:
+
+| 10 | 0 | 0 | 63 |
+|-|-|-|-|
+
+porque 1 1 1 1 1 1 = 63
+
+### e) Qual é o último endereço ÚTIL da faixa?
+
+É sempre o penúltimo endereço do broadcast.
+
+| 10 | 0 | 0 | 62 |
+|-|-|-|-|
+
+
+### f) Qual é a quantidade de hosts possíveis nessa rede?
+
+É só contar a quantidade de endereços do 1º até um antes do broadcast, que nesse caso será do 1 ao 62, portanto, 62 hosts possíveis de serem endereçados nessa rede. Em outras palavras, cabem 62 máquinas ou end-points nessa rede.
+
+**Respostas:**
+- Máscara de sub-rede: 255.255.255.192
+- Endereço de rede: 10.0.0.0
+- 1º endereço útil: 10.0.0.1
+- Endereço de broadcast: 10.0.0.63 (último endereço)
+- Último endereço útil: 10.0.0.62
+- Quantidade de hosts possíveis: 62
+
+
+## Exemplo 02: dado o IP 172.16.1.43/28
+#### a) Qual é máscara de sub-rede?
+#### b) Qual é o endereço de rede?
+#### c) Qual é o primeiro IPV4 disponível?
+#### d) Qual é o endereço de broadcast na rede?
+#### e) Qual é o último endereço IPV4 útil disponível?
+#### f) Quantos hosts são possíveis?
+
+**Respostas:**
+- Máscara de sub-rede: 255.255.255.240
+- Endereço de rede: 172.16.1.32
+- 1º IPV4: 172.16.1.33
+- Endereço de broadcast: 172.16.1.47 (último)
+- Último IPV4 útil: 172.16.1.46
+- Quantidade de hosts possíveis: 13
+
+
+## Exemplo 03: dado o IP 10.0.8.0/21
+#### a) Qual é máscara de sub-rede?
+#### b) Qual é o endereço de rede?
+#### c) Qual é o primeiro IPV4 disponível?
+#### d) Qual é o endereço de broadcast na rede?
+#### e) Qual é o último endereço IPV4 útil disponível?
+#### f) Quantos hosts são possíveis?
+
+**Respostas:**
+- Máscara de sub-rede: 255.255.248.0
+- Endereço de rede: 10.0.8.0
+- 1º IPV4: 10.0.8.1
+- Endereço de broadcast: 10.0.15.255
+- Último IPV4 útil: 10.0.15.254
+- Quantidade de hosts possíveis: 2046
+
+
+## Exemplo 04: 10.0.128.0/17
+
+### Dado o IP
+#### a) Qual é máscara de sub-rede?
+#### b) Qual é o endereço de rede?
+#### c) Qual é o primeiro IPV4 disponível?
+#### d) Qual é o endereço de broadcast na rede?
+#### e) Qual é o último endereço IPV4 útil disponível?
+#### f) Quantos hosts são possíveis?
+
+**Respostas:**
+- Máscara de sub-rede: 255.255.128.0
+- Endereço de rede: 10.0.128.0
+- 1º IPV4: 10.0.128.1
+- Endereço de broadcast: 10.0.255.255
+- Último IPV4 útil: 10.0.255.254
+- Quantidade de hosts possíveis: 2^15 - 2 = 32.766
+
+## Exemplo 05: 10.0.1.64/26
+
+### Dado o IP
+#### a) Qual é máscara de sub-rede?
+#### b) Qual é o endereço de rede?
+#### c) Qual é o primeiro IPV4 disponível?
+#### d) Qual é o endereço de broadcast na rede?
+#### e) Qual é o último endereço IPV4 útil disponível?
+#### f) Quantos hosts são possíveis?
+
+**Respostas:**
+- Máscara de sub-rede: 255.255.255.192
+- Endereço de rede: 10.0.1.64
+- 1º IPV4: 10.0.1.65
+- Endereço de broadcast: 10.0.1.127
+- Último IPV4 útil: 10.0.1.126
+- Quantidade de hosts possíveis: 2^6 - 2 = 62
+
+
+# Agora pense!
+
+Numas das instruções, você criou uma VPC 192.168.0.0/22
+
+### Dado o IP 192.168.0.0/22
+#### a) Qual é máscara de sub-rede?
+#### b) Qual é o endereço de rede?
+#### c) Qual é o primeiro IPV4 disponível?
+#### d) Qual é o endereço de broadcast na rede?
+#### e) Qual é o último endereço IPV4 útil disponível?
+#### f) Quantos hosts são possíveis?
+
+## E também criou uma sub-rede pública 192.168.0.0/24 e uma sub-rede privada 192.168.1.0/24
+
+#### a) Qual é máscara de cada sub-rede?
+#### b) Qual é o endereço de rede de cada sub-rede?
+#### c) Qual é o primeiro IPV4 disponível de cada sub-rede?
+#### d) Qual é o endereço de broadcast em cada rede-sub?
+#### e) Qual é o último endereço IPV4 útil disponível em cada sub-rede?
+#### f) Quantos hosts são possíveis em cada sub-rede?
+
+### g) As sub-redes de fato estão dentro da VPC? Justique!
+
+A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais são:
+
+# Desafio. Descubra o CIDR de cada faixa endereços gratuitos abaixo:
+
+- Faixa Classe: 10.0.0.0 a 10.255.255.255 
+
+- Faixa Classe: 172.16.0.0 a 172.31.255.255
+
+- Faixa Classe: 192.168.0.0 a 192.168.255.255
+
+# Kahoot!
