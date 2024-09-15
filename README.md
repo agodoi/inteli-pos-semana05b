@@ -329,7 +329,17 @@ f) Monte a seguinte topologia física conforme a figura, sem ligar os cabos
    <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-01.png)">
 </picture>
 
-h) Crie a rede principal **192.168.0.0/22** e as sub-redes **192.168.0.0/24** e **192.168.1.0/24**.
+g) Conecte um **cabo direto** dos PC 0 e 1 até o Switch 0 e outros **cabos diretos** dos PC 2 e 3 até o Switch 1. Use as portas **Fast Ethernet**.
+
+h) Faça o mesmo conectando **cabo direto** entre Switch0 até o Roteador0 e do Switch1 até o Roteador1. Sua montagem deve ficar igual à imagem a seguir.
+
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02.png">
+   <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02.png)">
+</picture>
+
+
 
 i) Descubra qual sub-rede o seu notebook está conectado.
 
