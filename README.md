@@ -314,17 +314,20 @@ c) Encontre um botão chamado **Retornar ao curso**;
 
 d) Logo no **Módulo 1: Baixar e Usar o Cisco Packet Tracer**, tem um link como esse [https://www.netacad.com/resources/lab-downloads](https://www.netacad.com/resources/lab-downloads) que permite você baixar o Packet Tracer de acordo com o sistema operacional do seu computador.
 
-d) Clique em **Módulo 1: Baixar e Usar o Cisco Packet Tracer**.
+d) Clique em **Módulo 1: Baixar e Usar o Cisco Packet Tracer**, baixe o Packet Tracer compatível com o seu Sistema Operacional.
 
-c) Conecte o seu notebook ao SSID + senha do roteador de teste;
+e) Abra o Packet Tracer, adicione os seguintes componentes:
 
-d) Abra um terminal CMD no seu notebook, e digite ```ipconfig /all```
+* 02 roteadores modelo 1941 (3ª opção da esquerda para a direita);
+* 02 switches modelo 2960 (1ª opção da esquerda para a direita);
+* 4 PCs (end device) 
 
-e) Encontre a lista de informações do **Adaptador de Rede sem Fio Wi-Fi**, e pegue o valor do IP do **Gateway Padrão**;
+f) Monte a seguinte topologia física conforme a figura, sem ligar os cabos
 
-f) Digite esse IP no seu navegador para entrar nas configurações do roteador. Use o usuário **admin** e senha **admin**;
-
-g) Procure pela opção **Redes**. Cada roteador trabalha de um jeito. Você deve pesquisar por uma opção onde você possa criar sub-redes;
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-01.png">
+   <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-01.png)">
+</picture>
 
 h) Crie a rede principal **192.168.0.0/22** e as sub-redes **192.168.0.0/24** e **192.168.1.0/24**.
 
