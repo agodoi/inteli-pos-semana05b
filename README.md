@@ -392,15 +392,32 @@ k) Volte no circuito, e configure manualmente os IP para cada dispositivo. Note 
 |PC2|192.168.0.129|255.255.255.192|192.168.1.190|Rede C|
 |PC3|192.168.0.130|255.255.255.192|192.168.1.190|Rede C|
 
-l) Sua rede está pronta, agora precisamos configurar manualmente os roteadores com sua tabela de roteamento. Isso impacta no desempenho geral da rede.
+l) Sua rede física está pronta, mas ela ainda não funciona, pois precisamos configurar manualmente os roteadores com as devidas tabelas de roteamento. Isso impacta no desempenho geral da rede. E sem tabela de roteamento, os roteadores não aprendem sobre os caminhos lógicos disponíveis nas sub-redes.
 
-Pense em quais as redes estão diretamente interligadas em cada roteador, isto é, quais os cabos estão saindo e chegando nele.
+Pense em quais as redes estão diretamente interligadas em cada roteador, isto é, quais os cabos estão saindo e chegando nele. Essas redes diretamente ligadas já são de conhecimento do respectivo roteador.
 
-* Roteador 0: possui as redes 192.168.0.0 e 192.168.0.64
-* Roteador 1: possui as redes 192.168.0.0 e 192.168.0.128
+* Roteador 0 conhece as redes 192.168.0.0 e 192.168.0.64
+* Roteador 1 conhece as redes 192.168.0.0 e 192.168.0.128
+
+Porém:
 
 **Roteador 0 não conhece a rede 192.168.0.128 / 255.255.255.192**
 
 **Roteador 1 não conhece a rede 192.168.0.0 / 255.255.255.192**
+
+m) Abra o Roteador 0 e vá em **Config** e depois **Static**.
+
+n) Em **Static Routes**, coloque em **Network** a rede que A não conhece, coloque 192.168.0.128 / 255.255.255.192 e no campo **Next hope** coloque o IP do próximo passo: 192.168.0.125 (que faz parte da 192.168.0.64). Essa interface GigaEthernet (192.168.0.125) é a porta de entrada mais próxima da sub-rede de A para chegar em B. Internamente, o roteador vai interconectar a 192.168.0.64 com a 192.168.0.128. Feito isso, clique em **Add**
+
+o) Faça o mesmo para o Roteador 1, vá em **Config** e depois **Static**. No campo **Network**, coloque a rede que B não conhece, que é a rede A, lado interface 0/0: 192.168.0.0 / 255.255.255.192 e no campo **Next hoje**, coloque o IP 192.168.0.126 e clique em **Add**. 
+
+p) Para testar a rede, clique no botão **Simulation** que fica no canto inferior direito, clique no botão **Edit Filters**, desmarque tudo, e só deixei o **ICMP** (protocolo de ping).
+
+q) Pegue um ícone de evelope fechado que está **Add simple PDU (P)** e arraste para o PC0.
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/cartinha.png">
+   <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/cartinha.png)">
+</picture>
 
 
