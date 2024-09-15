@@ -252,7 +252,7 @@ porque 1 1 1 1 1 1 = 63
 
 # Agora pense!
 
-Numas das instruções, você criou uma VPC 192.168.0.0/22
+Considere que você colocou no seu roteador a seguinte rede principal: **192.168.0.0/22**.
 
 ### Dado o IP 192.168.0.0/22
 #### a) Qual é máscara de sub-rede?
@@ -262,7 +262,7 @@ Numas das instruções, você criou uma VPC 192.168.0.0/22
 #### e) Qual é o último endereço IPV4 útil disponível?
 #### f) Quantos hosts são possíveis?
 
-## E também criou uma sub-rede pública 192.168.0.0/24 e uma sub-rede privada 192.168.1.0/24
+## E considerando que vocÊ criou uma sub-rede A com IP 192.168.0.0/24 e outra sub-rede B com 192.168.1.0/24
 
 #### a) Qual é máscara de cada sub-rede?
 #### b) Qual é o endereço de rede de cada sub-rede?
@@ -271,9 +271,15 @@ Numas das instruções, você criou uma VPC 192.168.0.0/22
 #### e) Qual é o último endereço IPV4 útil disponível em cada sub-rede?
 #### f) Quantos hosts são possíveis em cada sub-rede?
 
-### g) As sub-redes de fato estão dentro da VPC? Justique!
+### g) As sub-redes de fato estão dentro da rede principal? Justique!
 
 A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais são:
+
+- Faixa Classe: 10.0.0.0 a 10.255.255.255 
+
+- Faixa Classe: 172.16.0.0 a 172.31.255.255
+
+- Faixa Classe: 192.168.0.0 a 192.168.255.255
 
 # Desafio. Descubra o CIDR de cada faixa endereços gratuitos abaixo:
 
@@ -283,4 +289,15 @@ A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais s
 
 - Faixa Classe: 192.168.0.0 a 192.168.255.255
 
-# Kahoot!
+## BOAS PRÁTICAS [30min] - Como configurar sub-redes no roteador?
+
+### Material Necessário
+
+a) Formem grupos de até 5 alunos;
+b) Escolha 01 roteador que o grupo irá acessar;
+c) Conecte o seu notebook ao SSID + senha do roteador de teste;
+d) Abra um terminal CMD no seu notebook, e digite ```ipconfig /all```
+e) Encontre a lista de informações do **Adaptador de Rede sem Fio Wi-Fi**, e pegue o valor do IP do **Gateway Padrão**;
+f) Digite esse IP no seu navegador para entrar nas configurações do roteador. Use o usuário **admin** e senha **admin**;
+g) Procure pela opção **Redes**. Cada roteador trabalha de um jeito. Você deve pesquisar por uma opção onde você possa criar sub-redes;
+h) Crie a rede principal **192.168.0.0/22** e as sub-redes **192.168.0.0/24** e **192.168.1.0/24**.
