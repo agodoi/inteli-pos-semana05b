@@ -357,6 +357,8 @@ j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3
   |x x x x x x x x|x x x x x x x x|x x x x x x x x|trava trava x x x x x x|
   |8 bits travados|8 bits travados|8 bits travados|1 1 x x x x x x|
   |1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 x x x x x x|
+  |255|255|255|192|
+  
   
 * Suas sub-redes serão:
   
