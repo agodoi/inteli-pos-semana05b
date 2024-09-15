@@ -356,6 +356,7 @@ j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3
   | Sub-rede A | Sub-rede B | Sub-rede C | Sub-rede D |
   |-|-|-|-|
   |192.168.0.0 /192| 192.168.0.64 /192 | 192.168.0.128 /192 | 192.168.0.192 /192 |
+  |PC0 + PC1 + SW0 + R0 | R0 + R1 | PC2 + PC3 + SW1 + R1| Não usado |
 
 * 
 
