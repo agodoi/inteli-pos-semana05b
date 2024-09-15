@@ -380,7 +380,7 @@ j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3
 k) Volte no circuito, e configure manualmente os IP para cada dispositivo. Note que agora temos o endereço do Gateway. Adotamos o último endereço útil de cada sub-rede para colocar a porta Giga respectiva voltada para o seu Switch como Gateway. É sempre assim? Não! Você escolhe qual será o endereço do Gateway e que fácil de memorizar.
 
 |Dispositivo|Endereço IP|Máscara|Gateway|Observação|
-|-|-|-|-|
+|-|-|-|-|-|
 |PC0|192.168.0.1|255.255.255.192|192.168.0.62|Rede A|
 |PC1|192.168.0.2|255.255.255.192|192.168.0.62|Rede A|
 |SW0|não tem|não tem|não tem|Não é gerencíavel|
