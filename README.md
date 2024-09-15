@@ -384,10 +384,10 @@ k) Volte no circuito, e configure manualmente os IP para cada dispositivo. Note 
 |PC0|192.168.0.1|255.255.255.192|192.168.0.62|Rede A|
 |PC1|192.168.0.2|255.255.255.192|192.168.0.62|Rede A|
 |SW0|não tem|não tem|não tem|Não é gerencíavel|
-|R0-GigaEth0/0|192.168.0.62|255.255.255.192|não tem|Último IP útil de A, Gateway de PC0 e PC1|
-|R0-GigaEth0/1|192.168.0.126|255.255.255.192|não tem|Último IP útil de B|
-|R1-GigaEth0/1|192.168.0.125|255.255.255.192|não tem|Penúltimo IP útil de B|
-|R1-GigaEth0/0|192.168.0.190|255.255.255.192|não tem|Último IP útil de C, Gateway de PC2 e PC3|
+|R0-GigaEth0/0|192.168.0.62|255.255.255.192|não tem|Último IP útil de A, Gateway de PC0 e PC1, Interface 0/0 de R0|
+|R0-GigaEth0/1|192.168.0.126|255.255.255.192|não tem|Último IP útil de B, Interface 0/1 de R0|
+|R1-GigaEth0/1|192.168.0.125|255.255.255.192|não tem|Penúltimo IP útil de B, Interface 0/1 de R1|
+|R1-GigaEth0/0|192.168.0.190|255.255.255.192|não tem|Último IP útil de C, Gateway de PC2 e PC3, Interface 0/0 de R1|
 |SW1|não tem|não tem|não tem|Não é gerencíavel|
 |PC2|192.168.0.129|255.255.255.192|192.168.1.190|Rede C|
 |PC3|192.168.0.130|255.255.255.192|192.168.1.190|Rede C|
@@ -413,11 +413,11 @@ o) Faça o mesmo para o Roteador 1, vá em **Config** e depois **Static**. No ca
 
 p) Para testar a rede, clique no botão **Simulation** que fica no canto inferior direito, clique no botão **Edit Filters**, desmarque tudo, e só deixei o **ICMP** (protocolo de ping).
 
-q) Pegue um ícone de evelope fechado que está **Add simple PDU (P)** e arraste para o PC0.
+q) Pegue um ícone de evelope fechado que está **Add simple PDU (P)** e arraste e solte encima do PC0 e depois arraste para cima do PC3.
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/cartinha.png">
    <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/cartinha.png)">
 </picture>
 
-
+r) Dê um play e observe o pacote indo e voltando em direção ao PC3. Se o pacote foi e voltou, **SUCESSO!**. Se não, delete o pacotinho e repita o passo (q).
