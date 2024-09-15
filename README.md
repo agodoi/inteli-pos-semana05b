@@ -284,19 +284,37 @@ A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais s
 
 # Desafio. Descubra o CIDR de cada faixa endereços gratuitos abaixo:
 
-- Faixa Classe: 10.0.0.0 a 10.255.255.255 
-
+- Faixa Classe: 10.0.0.0 a 10.255.255.255
+  
 - Faixa Classe: 172.16.0.0 a 172.31.255.255
 
 - Faixa Classe: 192.168.0.0 a 192.168.255.255
 
-## BOAS PRÁTICAS [60min] - Como configurar sub-redes no roteador?
+## BOAS PRÁTICAS [60min] - Como configurar sub-redes usando Packet Tracer?
+
+Nessa prática, vamos simular uma rede LAN com 2 sub-redes usando a ferramenta da Cisco chamada Packet Tracer.
+
+Portanto, o objetivo é instalar o Packet Tracer em seu PC e fazer algumas simulações de rede e sub-redes.
 
 ### Material Necessário
 
-a) Formem grupos de até 5 alunos;
+a) Formar grupos de até 5 alunos;
 
-b) Escolha 01 roteador que o grupo irá acessar;
+b) Instalar o software Packet Tracer;
+
+Atenção: para instalar o Packet Tracer, você precisa abrir uma conta no Cisco Networking Academy.
+
+### Procedimentos
+
+a) Abra esse link [https://www.netacad.com/pt/courses/getting-started-cisco-packet-tracer?courseLang=pt-BR](https://www.netacad.com/pt/courses/getting-started-cisco-packet-tracer?courseLang=pt-BR) e clique em **Self-Paced**
+
+b) Se autentique clicando no botão **Google** (essa etapa abre a sua conta);
+
+c) Encontre um botão chamado **Retornar ao curso**;
+
+d) Logo no **Módulo 1: Baixar e Usar o Cisco Packet Tracer**, tem um link como esse [https://www.netacad.com/resources/lab-downloads](https://www.netacad.com/resources/lab-downloads) que permite você baixar o Packet Tracer de acordo com o sistema operacional do seu computador.
+
+d) Clique em **Módulo 1: Baixar e Usar o Cisco Packet Tracer**.
 
 c) Conecte o seu notebook ao SSID + senha do roteador de teste;
 
@@ -311,3 +329,8 @@ g) Procure pela opção **Redes**. Cada roteador trabalha de um jeito. Você dev
 h) Crie a rede principal **192.168.0.0/22** e as sub-redes **192.168.0.0/24** e **192.168.1.0/24**.
 
 i) Descubra qual sub-rede o seu notebook está conectado.
+
+## BOAS PRÁTICAS [60min] - Sub-redes no Packet Tracer.
+
+### Material Necessário
+
