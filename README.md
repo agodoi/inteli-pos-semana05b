@@ -360,8 +360,8 @@ j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3
 
 * Quais os endereços de cada Sub-rede? Começando pela Sub-rede A:
 
-  Sub-Rede |End. Rede | 1º End. Útil | Último End. Útil | End. Broadcast |Máscara |
-  |-|-|-|-|-|
+  |Sub-Rede |End. Rede | 1º End. Útil | Último End. Útil | End. Broadcast |Máscara |
+  |-|-|-|-|-|-|
   |A|192.168.0.0|192.168.0.1|192.168.0.62|192.168.0.63|255.255.255.192|
   |A|192.168.0.0|192.168.0.1|192.168.0.62|192.168.0.63|255.255.255.192|
 
