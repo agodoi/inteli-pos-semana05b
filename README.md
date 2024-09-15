@@ -295,11 +295,19 @@ A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais s
 ### Material Necessário
 
 a) Formem grupos de até 5 alunos;
+
 b) Escolha 01 roteador que o grupo irá acessar;
+
 c) Conecte o seu notebook ao SSID + senha do roteador de teste;
+
 d) Abra um terminal CMD no seu notebook, e digite ```ipconfig /all```
+
 e) Encontre a lista de informações do **Adaptador de Rede sem Fio Wi-Fi**, e pegue o valor do IP do **Gateway Padrão**;
+
 f) Digite esse IP no seu navegador para entrar nas configurações do roteador. Use o usuário **admin** e senha **admin**;
+
 g) Procure pela opção **Redes**. Cada roteador trabalha de um jeito. Você deve pesquisar por uma opção onde você possa criar sub-redes;
+
 h) Crie a rede principal **192.168.0.0/22** e as sub-redes **192.168.0.0/24** e **192.168.1.0/24**.
+
 i) Descubra qual sub-rede o seu notebook está conectado.
