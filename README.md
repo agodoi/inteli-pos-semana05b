@@ -421,3 +421,18 @@ q) Pegue um ícone de evelope fechado que está **Add simple PDU (P)** e arraste
 </picture>
 
 r) Dê um play e observe o pacote indo e voltando em direção ao PC3. Se o pacote foi e voltou, **SUCESSO!**. Se não, delete o pacotinho e repita o passo (q).
+
+### Cartinha indo do PC0 em direção ao PC3
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="">
+   <img alt="IPV4 vs IPV6" src="[YOUR-DEFAULT-IMAGE]()">
+</picture
+
+
+### Cartinha voltando do PC3 em direção ao PC0
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="">
+   <img alt="IPV4 vs IPV6" src="[YOUR-DEFAULT-IMAGE]()">
+</picture
