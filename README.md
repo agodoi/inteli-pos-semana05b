@@ -352,13 +352,13 @@ j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3
 * Não é possível fazer 3 sub-redes, porque 3 não é múltiplo de 2. Então, você terá que mirar em 4 sub-redes e usar 3.
 * Para ter 4 sub-redes, congele 2 bits mais significativos do 4º octeto. Observe os passos para entender:
 
-  |Passos| 1º octeto | 2º octeto | 3º octeto | 4º octeto |
-  |-|-|-|-|-|
-  |1|x x x x x x x x|x x x x x x x x|x x x x x x x x|x x x x x x x x|
-  |2|x x x x x x x x|x x x x x x x x|x x x x x x x x|congela congela x x x x x x|
-  |3|8 bits congelados|8 bits congelados|8 bits congelados|1 1 x x x x x x|
-  |4|1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 x x x x x x|
-  |5|255|255|255|192|
+  |Passos| 1º octeto | 2º octeto | 3º octeto | 4º octeto | Observação|
+  |-|-|-|-|-|-|
+  |1|? ? ? ? ? ? ? ?|? ? ? ? ? ? ? ?|? ? ? ? ? ? ? ?|? ? ? ? ? ? ? ?|Formato do IP|
+  |2|? ? ? ? ? ? ? ?|? ? ? ? ? ? ? ?|? ? ? ? ? ? ? ?|congela congela x x x x x x|Demanda do projeto|
+  |3|8 bits congelados|8 bits congelados|8 bits congelados|1 1 x x x x x x|Aplicando máscara 192|
+  |4|1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 x x x x x x|Bits congelados (1) e livres (x)|
+  |5|255|255|255|192|Cálculo realizado|
   
   
 * Suas sub-redes serão:
