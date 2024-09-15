@@ -351,6 +351,13 @@ j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3
 
 * Não é possível fazer 3 sub-redes, porque 3 não é múltiplo de 2. Então, você terá que mirar em 4 sub-redes e usar 3.
 * Para ter 4 sub-redes, congele 2 bits mais significativos do último octeto.
+
+  | 1º octeto | 2º octeto | 3º octeto | 4º octeto |
+  |-|-|-|-|
+  |x x x x x x x x|x x x x x x x x|x x x x x x x x|trava trava x x x x x x|
+  |8 bits travados|8 bits travados|8 bits travados|1 1 x x x x x x|
+  |1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 x x x x x x|
+  
 * Suas sub-redes serão:
   
   | Sub-rede A | Sub-rede B | Sub-rede C | Sub-rede D |
