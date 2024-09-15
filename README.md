@@ -437,3 +437,9 @@ r) Dê um play e observe o pacote indo e voltando em direção ao PC3. Se o paco
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/cartinha3.png">
    <img alt="IPV4 vs IPV6" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/cartinha3.png)">
 </picture
+
+# Exercício
+
+1) Faça um mapeamento de IP para ter 256 endereços de host e 3 sub-redes A B C.
+2) Monte a rede LAN no Packet Tracer.
+3) Faça o primeiro computador da rede A mandar um ping para o último computador da sua rede C.
