@@ -290,7 +290,7 @@ A título de curiosidade, as faixas de IP gratuitas utilizadas em redes locais s
 
 - Faixa Classe: 192.168.0.0 a 192.168.255.255
 
-## BOAS PRÁTICAS [30min] - Como configurar sub-redes no roteador?
+## BOAS PRÁTICAS [60min] - Como configurar sub-redes no roteador?
 
 ### Material Necessário
 
