@@ -1,4 +1,4 @@
-# inteli-pos-semana05b
+# Semana 05 - Dia B
 
 ## (4) Tipos de Rede
 
