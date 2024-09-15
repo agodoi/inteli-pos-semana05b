@@ -1,25 +1,23 @@
-# Semana 05 - Dia B
+# (1) Tipos de Rede
 
-## (4) Tipos de Rede
-
-### (4.1) PAN (Personal Area Network)
+### (1.1) PAN (Personal Area Network)
 
 Basicamente feita de dispositivos de curto alcance, em especial, os sem fio, via bluetooth;
 
-### (4.2) LAN (Local Area Network)
+### (1.2) LAN (Local Area Network)
 
 Feita de cabos UTP ou STP, WiFi, conectando computadores, notebooks, TVs, projetores, Alexa, dispositivos IoT, impressores e servidores.
  
-### (4.3) MAN (Metropolitan Area Network)
+### (1.3) MAN (Metropolitan Area Network)
 
 Feita de fibra óptica e rádio tipo minilink conectando empresas, hospitais, faculdades de diferentes endereços dentro de uma região metropolitana. Uma empresa ISP (Internet Service Provider) que alcança usuários dentro de uma cidade ou região metropolitana possui topologia física e lógica MAN.
 
-### (4.4) WAN (Wide Area Network)
+### (1.4) WAN (Wide Area Network)
 
 Feita de fibra óptica e satélite. A Internet se mistura com uma WAN.
 
 
-## (5) Importância do Modelo OSI em Redes
+## (2) Importância do Modelo OSI em Redes
 
 Ambas as redes servem para conectar os hosts (que são end-devices numa grande rede chamada Internet).
 
@@ -35,7 +33,7 @@ Alguns detaques da figura:
 
 * O Modelo OSI (Opened Standard Interconnection) possui 7 camadas. É uma pilha de camadas totalmente abstrata, isto é, não existe essas camadas na vida real e não correspondem à nenhuma placa específica do computador;
 
-## Modelo OSI
+## (2.1) Modelo OSI
 
 * **Camada 07 - Aplicação :** cuida de tudo o que aparece na sua tela, é a aplicação;
 * **Camada 06 - Apresentação :** é o tradutor com criptografia/descriptografia;
@@ -47,7 +45,7 @@ Alguns detaques da figura:
 
 
 
-## Protocolo IPV4 vs IPV6
+## (2.2) Protocolo IPV4 vs IPV6
 
 A figura a seguir aponta as principais diferenças. Contudo, na rede local, só se usa o IPV4.
 
@@ -57,7 +55,7 @@ A figura a seguir aponta as principais diferenças. Contudo, na rede local, só 
 </picture
 
 
-## Redes e Sub-redes
+## (3) Redes e Sub-redes
 
 As redes de computadores servem para criar hierarquias de estações de trabalho dentro de numa organização. Por exemplo, numa instituição de ensino, existe a rede de alunos, a de professores e a administrativa. As redes geralmente não se conversam e há critérios de segurança entre elas.
 
@@ -180,6 +178,7 @@ porque 1 1 1 1 1 1 = 63
 
 
 ## Exemplo 02: dado o IP 172.16.1.43/28
+
 #### a) Qual é máscara de sub-rede?
 #### b) Qual é o endereço de rede?
 #### c) Qual é o primeiro IPV4 disponível?
@@ -197,6 +196,7 @@ porque 1 1 1 1 1 1 = 63
 
 
 ## Exemplo 03: dado o IP 10.0.8.0/21
+
 #### a) Qual é máscara de sub-rede?
 #### b) Qual é o endereço de rede?
 #### c) Qual é o primeiro IPV4 disponível?
@@ -255,6 +255,7 @@ porque 1 1 1 1 1 1 = 63
 Considere que você colocou no seu roteador a seguinte rede principal: **192.168.0.0/22**.
 
 ### Dado o IP 192.168.0.0/22
+
 #### a) Qual é máscara de sub-rede?
 #### b) Qual é o endereço de rede?
 #### c) Qual é o primeiro IPV4 disponível?
@@ -301,3 +302,4 @@ e) Encontre a lista de informações do **Adaptador de Rede sem Fio Wi-Fi**, e p
 f) Digite esse IP no seu navegador para entrar nas configurações do roteador. Use o usuário **admin** e senha **admin**;
 g) Procure pela opção **Redes**. Cada roteador trabalha de um jeito. Você deve pesquisar por uma opção onde você possa criar sub-redes;
 h) Crie a rede principal **192.168.0.0/22** e as sub-redes **192.168.0.0/24** e **192.168.1.0/24**.
+i) Descubra qual sub-rede o seu notebook está conectado.
