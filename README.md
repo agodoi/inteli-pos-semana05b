@@ -331,14 +331,23 @@ f) Monte a seguinte topologia física conforme a figura, sem ligar os cabos
 
 g) Conecte um **cabo direto** dos PC 0 e 1 até o Switch 0 e outros **cabos diretos** dos PC 2 e 3 até o Switch 1. Use as portas **Fast Ethernet**.
 
-h) Faça o mesmo conectando **cabo direto** entre Switch0 até o Roteador0 e do Switch1 até o Roteador1. Sua montagem deve ficar igual à imagem a seguir.
+h) Faça o mesmo conectando **cabo direto** entre Switch0 até o Roteador0 e do Switch1 até o Roteador1. 
 
+i) Conecte um **cabo cruzado** entre os dois Roteadores. O uso do cabo cruzado é porque equipamentos iguais são sempre interligados por cabos cruzados (TX ligado no RX e vice-versa).
+
+Sua montagem deve ficar igual à imagem a seguir.
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02.png">
    <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02.png)">
 </picture>
 
+E na imagem a seguir, você encontra os nomes das portas:
+
+<picture>
+   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02b.png">
+   <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02b.png)">
+</picture>
 
 
 i) Descubra qual sub-rede o seu notebook está conectado.
