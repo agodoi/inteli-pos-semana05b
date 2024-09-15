@@ -350,12 +350,12 @@ E na imagem a seguir, você encontra os nomes das portas de cada dispositivo par
 j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3 sub-redes e com 64 endereços em cada sub-rede.
 
 * Não é possível fazer 3 sub-redes, porque 3 não é múltiplo de 2. Então, você terá que mirar em 4 sub-redes e usar 3.
-* Para ter 4 sub-redes, congele 2 bits mais significativos do último octeto.
+* Para ter 4 sub-redes, congele 2 bits mais significativos do 4º octeto.
 
   | 1º octeto | 2º octeto | 3º octeto | 4º octeto |
   |-|-|-|-|
-  |x x x x x x x x|x x x x x x x x|x x x x x x x x|trava trava x x x x x x|
-  |8 bits travados|8 bits travados|8 bits travados|1 1 x x x x x x|
+  |x x x x x x x x|x x x x x x x x|x x x x x x x x|congela congela x x x x x x|
+  |8 bits congelados|8 bits congelados|8 bits congelados|1 1 x x x x x x|
   |1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 x x x x x x|
   |255|255|255|192|
   
