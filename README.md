@@ -312,9 +312,7 @@ b) Se autentique clicando no botão **Google** (essa etapa abre a sua conta);
 
 c) Encontre um botão chamado **Retornar ao curso**;
 
-d) Logo no **Módulo 1: Baixar e Usar o Cisco Packet Tracer**, tem um link como esse [https://www.netacad.com/resources/lab-downloads](https://www.netacad.com/resources/lab-downloads) que permite você baixar o Packet Tracer de acordo com o sistema operacional do seu computador.
-
-d) Clique em **Módulo 1: Baixar e Usar o Cisco Packet Tracer**, baixe o Packet Tracer compatível com o seu Sistema Operacional.
+d) Logo no **Módulo 1: Baixar e Usar o Cisco Packet Tracer**, tem um link como esse [https://www.netacad.com/resources/lab-downloads](https://www.netacad.com/resources/lab-downloads) que permite você baixar o Packet Tracer de acordo com o sistema operacional do seu computador. Baixe o Packet Tracer compatível com o seu Sistema Operacional.
 
 e) Abra o Packet Tracer, adicione os seguintes componentes:
 
@@ -342,17 +340,20 @@ Sua montagem deve ficar igual à imagem a seguir.
    <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02.png)">
 </picture>
 
-E na imagem a seguir, você encontra os nomes das portas:
+E na imagem a seguir, você encontra os nomes das portas de cada dispositivo para conferir se fez igual.
 
 <picture>
    <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02b.png">
    <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02b.png)">
 </picture>
 
+j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3 sub-redes e com 64 endereços em cada sub-rede.
 
-i) Descubra qual sub-rede o seu notebook está conectado.
-
-## BOAS PRÁTICAS [60min] - Sub-redes no Packet Tracer.
-
-### Material Necessário
+* Não é possível fazer 3 sub-redes, porque 3 não é múltiplo de 2. Então, você terá que mirar em 4 sub-redes e usar 3.
+* Para ter 4 sub-redes, congele 2 bits mais significativos do último octeto.
+* Suas sub-redes serão:
+  | Sub-rede A | Sub-rede B | Sub-rede C | Sub-rede D |
+  |192.168.0.0 /192| 192.168.0.64 /192 | 192.168.0.128 /192 | 192.168.0.192 /192 |
+  |-|-|-|-|
+* 
 
