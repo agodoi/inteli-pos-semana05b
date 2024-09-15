@@ -384,12 +384,23 @@ k) Volte no circuito, e configure manualmente os IP para cada dispositivo. Note 
 |PC0|192.168.0.1|255.255.255.192|192.168.0.62|Rede A|
 |PC1|192.168.0.2|255.255.255.192|192.168.0.62|Rede A|
 |SW0|não tem|não tem|não tem|Não é gerencíavel|
-|R0-Giga0/0|192.168.0.62|255.255.255.192|não tem|Último IP útil de A, Gateway de PC0 e PC1|
-|R0-Giga0/1|192.168.0.126|255.255.255.192|não tem|Último IP útil de B|
-|R1-Giga0/1|192.168.0.125|255.255.255.192|não tem|Penúltimo IP útil de B|
-|R1-Giga0/0|192.168.0.190|255.255.255.192|não tem|Último IP útil de C, Gateway de PC2 e PC3|
+|R0-GigaEth0/0|192.168.0.62|255.255.255.192|não tem|Último IP útil de A, Gateway de PC0 e PC1|
+|R0-GigaEth0/1|192.168.0.126|255.255.255.192|não tem|Último IP útil de B|
+|R1-GigaEth0/1|192.168.0.125|255.255.255.192|não tem|Penúltimo IP útil de B|
+|R1-GigaEth0/0|192.168.0.190|255.255.255.192|não tem|Último IP útil de C, Gateway de PC2 e PC3|
 |SW1|não tem|não tem|não tem|Não é gerencíavel|
 |PC2|192.168.0.129|255.255.255.192|192.168.1.190|Rede C|
 |PC3|192.168.0.130|255.255.255.192|192.168.1.190|Rede C|
 
 l) Sua rede está pronta, agora precisamos configurar manualmente os roteadores com sua tabela de roteamento. Isso impacta no desempenho geral da rede.
+
+Pense em quais as redes estão diretamente interligadas em cada roteador, isto é, quais os cabos estão saindo e chegando nele.
+
+* Roteador 0: possui as redes 192.168.0.0 e 192.168.0.64
+* Roteador 1: possui as redes 192.168.0.0 e 192.168.0.128
+
+**Roteador 0 não conhece a rede 192.168.0.128 / 255.255.255.192**
+
+**Roteador 1 não conhece a rede 192.168.0.0 / 255.255.255.192**
+
+
