@@ -354,6 +354,7 @@ j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3
 
   | 1º octeto | 2º octeto | 3º octeto | 4º octeto |
   |-|-|-|-|
+  |x x x x x x x x|x x x x x x x x|x x x x x x x x|x x x x x x x x|
   |x x x x x x x x|x x x x x x x x|x x x x x x x x|congela congela x x x x x x|
   |8 bits congelados|8 bits congelados|8 bits congelados|1 1 x x x x x x|
   |1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 1 1 1 1 1 1|1 1 x x x x x x|
