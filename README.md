@@ -350,7 +350,7 @@ E na imagem a seguir, você encontra os nomes das portas de cada dispositivo par
 j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3 sub-redes e com 64 endereços em cada sub-rede.
 
 * Não é possível fazer 3 sub-redes, porque 3 não é múltiplo de 2. Então, você terá que mirar em 4 sub-redes e usar 3.
-* Para ter 4 sub-redes, congele 2 bits mais significativos do 4º octeto. Observe os passos para entender:
+* Para ter 4 sub-redes, congele 2 bits mais significativos do 4º octeto. Portanto você terá um **CIDR = /26**. Observe os passos para entender:
 
   |Passos| 1º octeto | 2º octeto | 3º octeto | 4º octeto | Observação|
   |-|-|-|-|-|-|
@@ -391,3 +391,5 @@ k) Volte no circuito, e configure manualmente os IP para cada dispositivo. Note 
 |SW1|não tem|não tem|não tem|Não é gerencíavel|
 |PC2|192.168.0.129|255.255.255.192|192.168.1.190|Rede C|
 |PC3|192.168.0.130|255.255.255.192|192.168.1.190|Rede C|
+
+l) Sua rede está pronta, agora precisamos configurar manualmente os roteadores com sua tabela de roteamento. Isso impacta no desempenho geral da rede.
