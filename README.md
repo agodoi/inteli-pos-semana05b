@@ -61,6 +61,8 @@ As redes de computadores servem para criar hierarquias de estações de trabalho
 
 E as sub-redes são redes menores que nascem a partir de uma rede, e para isso, precisamos do CIDR (Classes Inter-Domain Routing) para organizar essas redes dentro de redes.
 
+A partir de agora, você entenderá como funciona o mapeamento de sub-rede, que pode ser implementado tanto numa rede Local quanto numa VPC (Virtual Private Cloud) como AWS, Azure, etc.
+
 ## Basicamente, o que você precisa saber pra dominar esse trem?
 
 | Fazer conversão de binária para decimal.|
