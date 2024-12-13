@@ -682,7 +682,11 @@ void loop(){
   }
 }
 ```
+# Montagem do Circuito dos LEDs
 
+![Circuito](https://github.com/agodoi/inteli-pos-semana10/blob/main/imgs/esp32com2leds.png)
+
+---
 # Solução para Varrer faixa de IP usando Python
 
 ```
