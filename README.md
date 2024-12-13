@@ -376,8 +376,8 @@ k) Volte no circuito, e configure manualmente os IP para cada dispositivo. Note 
 |R1-GigaEth0/1|192.168.0.125|255.255.255.192|não tem|Penúltimo IP útil de B, Interface 0/1 de R1|
 |R1-GigaEth0/0|192.168.0.190|255.255.255.192|não tem|Último IP útil de C, Gateway de PC2 e PC3, Interface 0/0 de R1|
 |SW1|não tem|não tem|não tem|Não é gerencíavel|
-|PC2|192.168.0.129|255.255.255.192|192.168.1.190|Rede C|
-|PC3|192.168.0.130|255.255.255.192|192.168.1.190|Rede C|
+|PC2|192.168.0.129|255.255.255.192|192.168.1.0|Rede C|
+|PC3|192.168.0.130|255.255.255.192|192.168.1.0|Rede C|
 
 l) Sua rede física está pronta, mas ela ainda não funciona, pois precisamos configurar manualmente os roteadores com as devidas tabelas de roteamento. Isso impacta no desempenho geral da rede. E sem tabela de roteamento, os roteadores não aprendem sobre os caminhos lógicos disponíveis nas sub-redes.
 
