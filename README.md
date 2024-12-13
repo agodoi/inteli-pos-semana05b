@@ -23,11 +23,7 @@ Ambas as redes servem para conectar os hosts (que são end-devices numa grande r
 
 Os hosts se comunincam usando diversos protocolos que trabalham de **camada N para camada N**.
 
-
-<picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/SubRedes/blob/main/imgs/modelo_osi.png">
-   <img alt="Modelo OSI" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SubRedes/blob/main/imgs/modelo_osi.png)">
-</picture>
+![MODELO OSI](https://github.com/agodoi/SubRedes/blob/main/imgs/modelo_osi.png)
 
 Alguns detaques da figura:
 
