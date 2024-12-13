@@ -49,10 +49,7 @@ Alguns detaques da figura:
 
 A figura a seguir aponta as principais diferenças. Contudo, na rede local, só se usa o IPV4.
 
-<picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/SubRedes/blob/main/imgs/ipv4_vs_ipv6.png">
-   <img alt="IPV4 vs IPV6" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/SubRedes/blob/main/imgs/ipv4_vs_ipv6.png)">
-</picture
+![IP](https://github.com/agodoi/SubRedes/blob/main/imgs/ipv4_vs_ipv6.png)
 
 
 ## (3) Redes e Sub-redes
