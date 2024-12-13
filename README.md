@@ -317,10 +317,8 @@ e) Abra o Packet Tracer, adicione os seguintes componentes:
 
 f) Monte a seguinte topologia física conforme a figura, sem ligar os cabos
 
-<picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-01.png">
-   <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-01.png)">
-</picture>
+
+![TOPOLOGIA](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-01.png)
 
 g) Conecte um **cabo direto** dos PC 0 e 1 até o Switch 0 e outros **cabos diretos** dos PC 2 e 3 até o Switch 1. Use as portas **Fast Ethernet**.
 
