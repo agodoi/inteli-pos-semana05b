@@ -478,6 +478,80 @@ Alguns levantamentos por meio da engenharia social:
 
 Agora, vamos montar o seu dispositivo IoT que você mesmo atacou.
 
+Sabe gravar um programa usando o Arduino IDE?
+
+### 1. Pré-requisitos
+- **Arduino IDE instalado** (versão 1.8.19 ou superior).
+  - Baixe a IDE no site oficial: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software).
+- **Cabo USB** para conectar o ESP32 ao computador.
+- **Placa ESP32** (qualquer modelo compatível, como DevKit V1 ou NodeMCU-32S).
+
+---
+
+### Passos
+
+### 2. Passo a Passo para Instalação
+
+#### Passo 1: Abra o Arduino IDE
+- Inicie o Arduino IDE no seu computador.
+
+#### Passo 2: Adicione o Gerenciador de Placas ESP32
+1. Vá para o menu **File** (ou **Arquivo**) e clique em **Preferences** (ou **Preferências**).
+2. Na janela de Preferências, localize o campo **Additional Board Manager URLs** (ou **URLs Adicionais para Gerenciadores de Placas**).
+3. Insira a URL abaixo no campo (caso já tenha outras URLs, separe-as por vírgula):
+   ```
+   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+   ```
+4. Clique em **OK** para salvar.
+
+#### Passo 3: Instale as Placas ESP32
+1. Vá para o menu **Tools** (ou **Ferramentas**) > **Board** (ou **Placa**) > **Boards Manager** (ou **Gerenciador de Placas**).
+2. Na barra de busca, digite **ESP32**.
+3. Clique em **Install** (ou **Instalar**) na entrada "esp32 by Espressif Systems".
+4. Aguarde o download e a instalação serem concluídos.
+
+#### Passo 4: Selecione a Placa ESP32
+1. Conecte sua placa ESP32 ao computador usando o cabo USB.
+2. No Arduino IDE, vá para **Tools** > **Board** > **ESP32 Arduino**.
+3. Escolha a placa que corresponde ao seu modelo, como:
+   - **ESP32 Dev Module** (para a maioria das placas DevKit V1).
+
+#### Passo 5: Configure a Porta Serial
+1. Ainda no menu **Tools**, vá para **Port**.
+2. Selecione a porta correspondente ao ESP32 (geralmente é algo como `COM3`, `COM4`, etc., no Windows, ou `/dev/ttyUSB0` no Linux/Mac).
+
+#### Passo 6: Teste a Instalação
+1. Abra o exemplo básico de piscar LED integrado:
+   - Vá para **File** > **Examples** > **Basics** > **Blink**.
+2. Substitua o número do pino no código, se necessário, para o LED embutido no ESP32:
+   ```cpp
+   void setup() {
+       pinMode(2, OUTPUT); // Pino 2 geralmente é o LED embutido
+   }
+
+   void loop() {
+       digitalWrite(2, HIGH);
+       delay(1000);
+       digitalWrite(2, LOW);
+       delay(1000);
+   }
+   ```
+3. Clique em **Upload** (ou pressione `Ctrl + U`).
+4. Aguarde o código ser enviado. Se aparecer "Done Uploading", o LED do ESP32 começará a piscar.
+
+---
+
+### 3. Solução de Problemas
+- **Problema: Porta Serial não aparece**:
+  - Verifique se o driver USB está instalado. Baixe o driver CP2102 ou CH340 (dependendo da sua placa) no site do fabricante.
+- **Problema: Erro ao enviar código**:
+  - Pressione e mantenha o botão **BOOT** no ESP32 enquanto o código é carregado.
+
+---
+
+Com esses passos, o ESP32 estará configurado e pronto para ser usado na Arduino IDE! Se precisar de mais ajuda, é só perguntar.
+
+
 ```
 // Load Wi-Fi library
 #include <WiFi.h>
