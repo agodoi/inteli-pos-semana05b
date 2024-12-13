@@ -683,4 +683,47 @@ void loop(){
 }
 ```
 
+# Solução para Varrer faixa de IP usando Python
 
+```
+import platform
+import subprocess
+
+def ping_sweep(start_ip, end_ip):
+    # Certifique-se de que está rodando no Windows
+    if platform.system() != "Windows":
+        print("Este script está configurado para rodar no Windows.")
+        return
+
+    print(f"Varredura de {start_ip} a {end_ip}...\n")
+    # Divide o IP inicial e final em partes
+    start_parts = start_ip.split('.')
+    end_parts = end_ip.split('.')
+
+    # Certifica-se de que os IPs estão na mesma rede
+    if start_parts[:3] != end_parts[:3]:
+        print("Apenas suportamos a varredura na mesma sub-rede.")
+        return
+
+    # Converte os últimos octetos para inteiros
+    start_range = int(start_parts[3])
+    end_range = int(end_parts[3])
+    base_ip = '.'.join(start_parts[:3])
+
+    for i in range(start_range, end_range + 1):
+        ip = f"{base_ip}.{i}"
+        try:
+            # Comando de ping para Windows
+            output = subprocess.run(["ping", "-n", "1", ip], stdout=subprocess.PIPE, text=True)
+            if "TTL=" in output.stdout:
+                print(f"Dispositivo ativo: {ip}")
+        except Exception as e:
+            print(f"Erro ao tentar pingar {ip}: {e}")
+
+# Define a faixa de IP para varrer
+start_ip = "192.168.0.1"
+end_ip = "192.168.0.62"
+
+# Executa a função
+ping_sweep(start_ip, end_ip)
+```
