@@ -454,6 +454,7 @@ Nessa parte da aula, vamos simular um ataque a um dispostivo IoT que controla um
 Regras:
 
 a) Trabalho em dupla
+
 b) Use qualquer tipo de programação que achar necessária
 
 Alguns levantamentos por meio da engenharia social:
