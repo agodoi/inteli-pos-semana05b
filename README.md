@@ -488,8 +488,6 @@ Sabe gravar um programa usando o Arduino IDE?
 
 ---
 
-### Passos
-
 ### 2. Passo a Passo para Instalação
 
 #### Passo 1: Abra o Arduino IDE
