@@ -461,8 +461,11 @@ Alguns levantamentos por meio da engenharia social:
 
 1) O dispositivo pode estar nas redes A ou B do mapeamento feito no Packet Tracer;
 2) Para controlar o dispositivo, usa-se a URL:
+   
    a) X.X.X.X/pino/on (LIGA)
+   
    b) X.X.X.X/pino/off (DESLIGA)
-3) Sua missão é atacar esse dispositivo fazendo-o desligar (DESLIGAR O LED VERDE). 
-4) Qual é a sua estratégia?
-5) Faça o ataque e se funcionar, monte uma apresentação que será apresentada à turma.
+   
+4) Sua missão é atacar esse dispositivo fazendo-o desligar (DESLIGAR O LED VERDE). 
+5) Qual é a sua estratégia?
+6) Faça o ataque e se funcionar, monte uma apresentação que será apresentada à turma.
