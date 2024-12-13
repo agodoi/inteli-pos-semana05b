@@ -443,7 +443,7 @@ d) Há 2 LEDs para você atacar.
 
 Alguns levantamentos por meio da engenharia social:
 
-1) O dispositivo pode estar nas redes A ou B do mapeamento feito no Packet Tracer;
+1) O dispositivo pode estar nas redes A ou C do mapeamento feito no Packet Tracer acima (considere a rede com subrede de 64 hosts);
 2) Para controlar o dispositivo, usa-se a URL:
    
    a) X.X.X.X/pino/on (LIGA)
