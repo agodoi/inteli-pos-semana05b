@@ -328,17 +328,11 @@ i) Conecte um **cabo cruzado** entre os dois Roteadores. O uso do cabo cruzado �
 
 Sua montagem deve ficar igual à imagem a seguir.
 
-<picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02.png">
-   <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02.png)">
-</picture>
+![TOPOLOGIA1](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02.png)
 
 E na imagem a seguir, você encontra os nomes das portas de cada dispositivo para conferir se fez igual.
 
-<picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02b.png">
-   <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02b.png)">
-</picture>
+![TOPOLOGIA2](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/topologia-02b.png)
 
 j) Agora pare e pense! Faça os cálculos dos IP e máscaras para você montar 3 sub-redes e com 64 endereços em cada sub-rede.
 
@@ -408,28 +402,22 @@ p) Para testar a rede, clique no botão **Simulation** que fica no canto inferio
 
 q) Pegue um ícone de evelope fechado que está **Add simple PDU (P)** e arraste e solte encima do PC0 e depois arraste para cima do PC3.
 
-<picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/cartinha.png">
-   <img alt="Estrela Estendida" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/cartinha.png)">
-</picture>
+![LAN1](https://github.com/agodoi/inteli-pos-semana05b/blob/main/imgs/cartinha.png)
+
 
 r) Dê um play e observe o pacote indo e voltando em direção ao PC3. Se o pacote foi e voltou, **SUCESSO!**. Se não, delete o pacotinho e repita o passo (q).
 
 ---
 ## Cartinha indo do PC0 em direção ao PC3
 
-<picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/cartinha2.png">
-   <img alt="IPV4 vs IPV6" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/cartinha2.png)">
-</picture
+
+![LAN2](https://github.com/agodoi/inteli-pos-semana05b/blob/main/cartinha2.png)
 
 ---
 ## Cartinha voltando do PC3 em direção ao PC0
 
-<picture>
-   <source media="(prefers-color-scheme: light)" srcset="https://github.com/agodoi/inteli-pos-semana05b/blob/main/cartinha3.png">
-   <img alt="IPV4 vs IPV6" src="[YOUR-DEFAULT-IMAGE](https://github.com/agodoi/inteli-pos-semana05b/blob/main/cartinha3.png)">
-</picture
+![LAN3](https://github.com/agodoi/inteli-pos-semana05b/blob/main/cartinha3.png)
+
 
 # Exercício
 
