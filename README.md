@@ -522,6 +522,7 @@ Sabe gravar um programa usando o Arduino IDE?
 ### 3. Solução de Problemas
 - **Problema: Porta Serial não aparece**:
   - Verifique se o driver USB está instalado. Baixe o driver CP2102 ou CH340 (dependendo da sua placa) no site do fabricante.
+  - [DONWLOAD](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 - **Problema: Erro ao enviar código**:
   - Pressione e mantenha o botão **BOOT** no ESP32 enquanto o código é carregado.
 
