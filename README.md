@@ -530,6 +530,7 @@ Sabe gravar um programa usando o Arduino IDE?
 Com esses passos, o ESP32 estará configurado e pronto para ser usado na Arduino IDE! Se precisar de mais ajuda, é só perguntar.
 
 # Código que Controla LED pela URL IP/on ou IP/off
+
 ```
 // Load Wi-Fi library
 #include <WiFi.h>
@@ -679,7 +680,7 @@ void loop(){
     client.stop();
     Serial.println("Client disconnected.");
     Serial.println("");
-  }
+  }
 }
 ```
 # Montagem do Circuito dos LEDs
