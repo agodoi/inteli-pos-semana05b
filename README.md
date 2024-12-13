@@ -300,7 +300,7 @@ Portanto, o objetivo é instalar o Packet Tracer em seu PC e fazer algumas simul
 
 ### Material Necessário
 
-a) Formar grupos de até 5 alunos;
+a) Formar grupos em duplas;
 
 b) Instalar o software Packet Tracer;
 
